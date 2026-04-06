@@ -18,7 +18,7 @@ public class CardData : ScriptableObject
     public List<IEffect> baseEffectList = new();
     [SerializeReference, SubclassSelector]
     public List<IEffect> upgradeEffectList = new();
-    public string textOverride; // If not written, the text will be generated automatically.
+    public UpgradeValue<string> textOverride; // If not written, the text will be generated automatically.
 }
 
 [System.Serializable]
