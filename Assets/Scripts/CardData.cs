@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using MackySoft.SerializeReferenceExtensions;
 
 [CreateAssetMenu(menuName = "Card/CardData")]
 public class CardData : ScriptableObject
@@ -10,16 +11,18 @@ public class CardData : ScriptableObject
     public CardRarity cardRarity;
     public CardType cardType;
     public TargetType targetType;
-    [SerializeReference] public List<EffectBase> effectList;
+
+    [SerializeReference, SubclassSelector]
+    public List<IEffect> effectList = new();
 }
 
 public enum CardColor
 {
     Colorless,
     Ironclad,
-    Silent,
+    Regent,
+    Necrobinder,
     Defect,
-    Watcher
 }
 
 public enum CardRarity
