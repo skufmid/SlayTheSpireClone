@@ -1,16 +1,8 @@
+using System;
 using UnityEngine;
 
-public class EffectBase : MonoBehaviour
+[Serializable]
+public abstract class EffectBase
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public abstract void Execute(object context);
 }
