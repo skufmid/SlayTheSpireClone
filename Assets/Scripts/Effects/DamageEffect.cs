@@ -5,9 +5,10 @@ using UnityEngine;
 public class DamageEffect : IEffect
 {
     [SerializeField] private int amount;
-    public  string Text {
+    public string Text
+    {
         get { return $"피해를 {amount} 줍니다."; }
-     }
+    }
     
     public int Amount {
         get {  return amount; }
