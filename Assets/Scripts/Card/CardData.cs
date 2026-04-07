@@ -11,8 +11,8 @@ public class CardData : ScriptableObject
     public CardColor cardColor;
     public CardRarity cardRarity;
     public CardType cardType;
-    public CardEnchantment cardEnchantment;
-    public TargetType targetType;
+    public UpgradeValue<TargetType> targetType;
+    public UpgradeValue<int> targetCount;
 
     [SerializeReference, SubclassSelector]
     public List<IEffect> baseEffectList = new();
@@ -52,12 +52,12 @@ public enum CardType
     Attack, Skill, Power, Status, Curse, Quest
 }
 
+public enum TargetType
+{
+    None, Enemy, Player, AnyCharacter, Hand, DrawPile, DiscardPile
+}
+
 public enum CardEnchantment
 {
     None, Adroit, Clone, Corrupted
-}
-
-public enum TargetType
-{
-    None, Enemy, Player, Any
 }
