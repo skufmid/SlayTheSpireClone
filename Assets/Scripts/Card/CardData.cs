@@ -7,18 +7,19 @@ using System;
 public class CardData : ScriptableObject
 {
     public string cardName;
-    public UpgradeValue<int> cost; // -1 for X cost, -2 for no cost
     public CardColor cardColor;
     public CardRarity cardRarity;
     public CardType cardType;
+
+    public UpgradeValue<int> cost; // -1 for X cost, -2 for no cost
     public UpgradeValue<TargetType> targetType;
     public UpgradeValue<int> targetCount;
+    public UpgradeValue<string> textOverride; // If not written, the text will be generated automatically.
 
     [SerializeReference, SubclassSelector]
     public List<IEffect> baseEffectList = new();
     [SerializeReference, SubclassSelector]
     public List<IEffect> upgradeEffectList = new();
-    public UpgradeValue<string> textOverride; // If not written, the text will be generated automatically.
 }
 
 [System.Serializable]
