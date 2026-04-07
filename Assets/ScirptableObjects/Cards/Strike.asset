@@ -16,6 +16,7 @@ MonoBehaviour:
   cardColor: 1
   cardRarity: 0
   cardType: 0
+  cardImage: {fileID: 21300000, guid: 3717a8b995f6cec4ca510922ee2deac9, type: 3}
   cost:
     baseValue: 1
     upgradedValue: 1
