@@ -1,7 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class BattleDeckState
+public class BattleDeck
 {
     public Deck DrawPile { get; } = new();
     public Deck Hand { get; } = new();

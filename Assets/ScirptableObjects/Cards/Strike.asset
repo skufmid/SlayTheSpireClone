@@ -13,19 +13,25 @@ MonoBehaviour:
   m_Name: Strike
   m_EditorClassIdentifier: 
   cardName: "\uD0C0\uACA9"
-  cost:
-    baseValue: 1
-    upgradedValue: 1
   cardColor: 1
   cardRarity: 0
   cardType: 0
-  cardEnchantment: 0
-  targetType: 1
+  cost:
+    baseValue: 1
+    upgradedValue: 1
+  targetType:
+    baseValue: 1
+    upgradedValue: 1
+  targetCount:
+    baseValue: 1
+    upgradedValue: 1
+  textOverride:
+    baseValue: 
+    upgradedValue: 
   baseEffectList:
   - rid: 8503146984960426185
   upgradeEffectList:
   - rid: 8503146984960426183
-  textOverride: 
   references:
     version: 2
     RefIds:
