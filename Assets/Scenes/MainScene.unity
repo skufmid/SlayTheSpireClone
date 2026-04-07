@@ -285,6 +285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 021f1dc5a5e5c4846a976d5770ed1282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  card: {fileID: 11400000, guid: 3f13f9d19269b924f9653333cf156cc8, type: 2}
 --- !u!4 &1741926566
 Transform:
   m_ObjectHideFlags: 0

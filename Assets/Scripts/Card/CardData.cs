@@ -10,6 +10,7 @@ public class CardData : ScriptableObject
     public CardColor cardColor;
     public CardRarity cardRarity;
     public CardType cardType;
+    public Sprite cardImage;
 
     public UpgradeValue<int> cost; // -1 for X cost, -2 for no cost
     public UpgradeValue<TargetType> targetType;
