@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEditor.Rendering;
 using UnityEngine;
 
-
 public class Deck
 {
     protected readonly List<CardInstance> cards = new();
