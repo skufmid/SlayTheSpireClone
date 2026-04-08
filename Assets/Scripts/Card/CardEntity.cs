@@ -9,7 +9,7 @@ public class CardEntity : MonoBehaviour
     [SerializeField] private CardRarity cardRarity;
 
     [Header("Database")]
-    [SerializeField] private CardVisualDatabase visualDatabase;
+    [SerializeField] private CardFrameDatabase visualDatabase;
 
     [Header("UI References")]
     [SerializeField] private Image backgroundImage;

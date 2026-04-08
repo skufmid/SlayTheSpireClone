@@ -40,7 +40,7 @@ public struct CardOrbSprite
 }
 
 [CreateAssetMenu(menuName = "Card/Card Visual Database")]
-public class CardVisualDatabase : ScriptableObject
+public class CardFrameDatabase : ScriptableObject
 {
     [Header("Background")]
     public List<BackgroundSprite> backgroundSprites = new();

@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b951075304b57d14daf3cb62f764befd, type: 3}
-  m_Name: CardVisualDatabase
+  m_Script: {fileID: 11500000, guid: 7ed9959c9aa10b74d9c57c12f48f750d, type: 3}
+  m_Name: CardFrameDatabase
   m_EditorClassIdentifier: 
   backgroundSprites:
   - Type: 0

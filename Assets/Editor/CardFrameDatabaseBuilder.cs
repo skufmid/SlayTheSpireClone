@@ -3,12 +3,12 @@ using System.IO;
 using UnityEditor;
 using UnityEngine;
 
-public static class CardVisualDatabaseBuilder
+public static class CardFrameDatabaseBuilder
 {
-    private const string SourceRootFolder = "Assets/Art/CardVisuals";
-    private const string DatabaseAssetPath = "Assets/ScriptableObjects/CardVisualDatabase.asset";
+    private const string SourceRootFolder = "Assets/Art/CardFrames";
+    private const string DatabaseAssetPath = "Assets/ScriptableObjects/CardFrameDatabase.asset";
 
-    [MenuItem("Tools/Card/Build Card Visual Database")]
+    [MenuItem("Tools/Card/Build Card Frame Database")]
     public static void Build()
     {
         var database = LoadOrCreateDatabase();
@@ -53,7 +53,7 @@ public static class CardVisualDatabaseBuilder
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
 
-        Debug.Log("CardVisualDatabase 자동 생성/갱신 완료");
+        Debug.Log("CardFrameDatabase 자동 생성/갱신 완료");
     }
 
     private static void FillEntries<T>(
@@ -84,9 +84,9 @@ public static class CardVisualDatabaseBuilder
         }
     }
 
-    private static CardVisualDatabase LoadOrCreateDatabase()
+    private static CardFrameDatabase LoadOrCreateDatabase()
     {
-        var database = AssetDatabase.LoadAssetAtPath<CardVisualDatabase>(DatabaseAssetPath);
+        var database = AssetDatabase.LoadAssetAtPath<CardFrameDatabase>(DatabaseAssetPath);
         if (database != null)
             return database;
 
@@ -96,7 +96,7 @@ public static class CardVisualDatabaseBuilder
             CreateFolderRecursive(folderPath);
         }
 
-        database = ScriptableObject.CreateInstance<CardVisualDatabase>();
+        database = ScriptableObject.CreateInstance<CardFrameDatabase>();
         AssetDatabase.CreateAsset(database, DatabaseAssetPath);
         AssetDatabase.SaveAssets();
 
