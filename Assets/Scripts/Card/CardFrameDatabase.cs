@@ -39,7 +39,7 @@ public struct CardOrbSprite
     public Sprite Sprite;
 }
 
-[CreateAssetMenu(menuName = "Card/Card Visual Database")]
+[CreateAssetMenu(menuName = "Card/Card Frame Database")]
 public class CardFrameDatabase : ScriptableObject
 {
     [Header("Background")]
@@ -77,6 +77,7 @@ public class CardFrameDatabase : ScriptableObject
 
         foreach (var entry in backgroundSprites)
         {
+            Debug.Log($"Adding background: Type={entry.Type}, Color={entry.Color}, Sprite={entry.Sprite.name}");
             if (!_backgroundDict.ContainsKey((entry.Type, entry.Color)))
                 _backgroundDict.Add((entry.Type, entry.Color), entry.Sprite);
         }
@@ -106,6 +107,11 @@ public class CardFrameDatabase : ScriptableObject
         }
 
         _initialized = true;
+    }
+
+    private void OnEnable()
+    {
+        _initialized = false;
     }
 
     public Sprite GetBackground(CardType type, CardColor color)

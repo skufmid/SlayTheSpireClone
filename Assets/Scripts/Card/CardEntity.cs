@@ -7,16 +7,23 @@ public class CardEntity : MonoBehaviour
     [SerializeField] private CardType cardType;
     [SerializeField] private CardColor cardColor;
     [SerializeField] private CardRarity cardRarity;
+    [SerializeField] private Sprite cardArt;
 
     [Header("Database")]
     [SerializeField] private CardFrameDatabase visualDatabase;
 
     [Header("UI References")]
-    [SerializeField] private Image backgroundImage;
-    [SerializeField] private Image frameImage;
-    [SerializeField] private Image bannerImage;
-    [SerializeField] private Image typeIconImage;
-    [SerializeField] private Image cardOrbImage;
+    [SerializeField] private SpriteRenderer backgroundImage;
+    [SerializeField] private SpriteRenderer frameImage;
+    [SerializeField] private SpriteRenderer bannerImage;
+    [SerializeField] private SpriteRenderer typeIconImage;
+    [SerializeField] private SpriteRenderer cardOrbImage;
+    [SerializeField] private SpriteRenderer cardArtImage;
+
+    private void Awake()
+    {
+        RefreshVisual();
+    }
 
     public void SetCardVisual(CardType type, CardColor color, CardRarity rarity)
     {
@@ -49,34 +56,8 @@ public class CardEntity : MonoBehaviour
 
         if (cardOrbImage != null)
             cardOrbImage.sprite = visualDatabase.GetCardOrb(cardColor);
-    }
 
-    public void SetCardType(CardType type)
-    {
-        cardType = type;
-        RefreshVisual();
-    }
-
-    public void SetCardColor(CardColor color)
-    {
-        cardColor = color;
-        RefreshVisual();
-    }
-
-    public void SetCardRarity(CardRarity rarity)
-    {
-        cardRarity = rarity;
-        RefreshVisual();
-    }
-
-    private void Awake()
-    {
-        RefreshVisual();
-    }
-
-    private void OnValidate()
-    {
-        if (visualDatabase == null) return;
-        RefreshVisual();
+        if (cardArtImage != null)
+            cardArtImage.sprite = cardArt;
     }
 }
