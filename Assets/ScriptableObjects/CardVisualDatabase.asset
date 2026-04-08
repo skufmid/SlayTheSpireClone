@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b951075304b57d14daf3cb62f764befd, type: 3}
+  m_Name: CardVisualDatabase
+  m_EditorClassIdentifier: 
+  backgroundSprites:
+  - Type: 0
+    Color: 1
+    Sprite: {fileID: 21300000, guid: 87e15540cc5c3fc48b927596fa0fb34b, type: 3}
+  - Type: 2
+    Color: 1
+    Sprite: {fileID: 21300000, guid: 9e705aa11c2e59d4ba2873b3d5b014d2, type: 3}
+  - Type: 1
+    Color: 1
+    Sprite: {fileID: 21300000, guid: 8bf005fc5bbc9214ea5869391716434b, type: 3}
+  frameSprites:
+  - Type: 0
+    Rarity: 1
+    Sprite: {fileID: 21300000, guid: a92972be60f3c1b42bc39dede49b90d6, type: 3}
+  - Type: 0
+    Rarity: 3
+    Sprite: {fileID: 21300000, guid: f5e8188b2b27f5c469f913b1ab61d2fa, type: 3}
+  - Type: 0
+    Rarity: 2
+    Sprite: {fileID: 21300000, guid: 22a044d86f2925142bbfab66ca0f41e9, type: 3}
+  - Type: 2
+    Rarity: 1
+    Sprite: {fileID: 21300000, guid: c94a72aa702355c478ed53e027f2bfa8, type: 3}
+  - Type: 2
+    Rarity: 3
+    Sprite: {fileID: 21300000, guid: 58254288670e5ce488a322dcdfdd19d1, type: 3}
+  - Type: 2
+    Rarity: 2
+    Sprite: {fileID: 21300000, guid: 3cb54f8ac1f140543b381b2a999c319f, type: 3}
+  - Type: 1
+    Rarity: 1
+    Sprite: {fileID: 21300000, guid: 145f39172b93d484481a07e4d3847f17, type: 3}
+  - Type: 1
+    Rarity: 3
+    Sprite: {fileID: 21300000, guid: d65d3a2a1ea29c347a81a4bebed73e27, type: 3}
+  - Type: 1
+    Rarity: 2
+    Sprite: {fileID: 21300000, guid: 22d1db7c7034a5e43908d445c5a59f4f, type: 3}
+  bannerSprites:
+  - Rarity: 1
+    Sprite: {fileID: 21300000, guid: 4f4b009469f49b745a4fa03e9cdecc50, type: 3}
+  - Rarity: 3
+    Sprite: {fileID: 21300000, guid: 2aa5e0b8b41500842a0dcafc1768226a, type: 3}
+  - Rarity: 2
+    Sprite: {fileID: 21300000, guid: d944faa723f1e9546be1196e8f28fc48, type: 3}
+  typeIconSprites:
+  - Rarity: 1
+    Sprite: {fileID: 21300000, guid: e69463842293ed44e8db9da9903df44e, type: 3}
+  - Rarity: 3
+    Sprite: {fileID: 21300000, guid: bf2af3e573a20ea47ab50746df12e1c9, type: 3}
+  - Rarity: 2
+    Sprite: {fileID: 21300000, guid: 76d222e6625dea44a8548bbb0cab8b24, type: 3}
+  cardOrbSprites:
+  - Color: 1
+    Sprite: {fileID: 21300000, guid: a898c9202290fe24faab3c64061d6364, type: 3}
