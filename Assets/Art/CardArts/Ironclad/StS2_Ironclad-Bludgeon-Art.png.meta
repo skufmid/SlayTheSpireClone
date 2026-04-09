@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 777cf64a774bcdb4ea05f35644808062
+guid: a53b27906c566bc4aaeb44ece3415ae9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1349650318614629768
-    second: StS2_Ironclad-Barricade-Art_0
+      213: -3905140535266406883
+    second: StS2_Ironclad-Bludgeon-Art_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: StS2_Ironclad-Barricade-Art_0
+      name: StS2_Ironclad-Bludgeon-Art_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 88d840460dbeab210800000000000000
-      internalID: 1349650318614629768
+      spriteID: d1e877d9f572ec9c0800000000000000
+      internalID: -3905140535266406883
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      StS2_Ironclad-Bludgeon-Art_0: -3905140535266406883
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
