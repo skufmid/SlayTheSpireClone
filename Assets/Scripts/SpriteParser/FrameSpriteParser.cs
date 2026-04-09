@@ -8,7 +8,7 @@ public class FrameSpriteParser : ISpriteParser<FrameSprite>
     {
         result = default;
 
-        List<string> parts = SpriteParseUtility.SplitFileName(fileName);
+        List<string> parts = SpriteParseUtility.SplitByCapital(fileName);
 
         if (parts.Count != 3)
             return false;

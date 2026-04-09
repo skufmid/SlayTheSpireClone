@@ -8,7 +8,7 @@ public class CardOrbSpriteParser : ISpriteParser<CardOrbSprite>
     {
         result = default;
 
-        List<string> parts = SpriteParseUtility.SplitFileName(fileName);
+        List<string> parts = SpriteParseUtility.SplitByCapital(fileName);
 
         if (parts.Count != 3)
             return false;

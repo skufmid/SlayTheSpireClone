@@ -8,7 +8,7 @@ public class BannerSpriteParser : ISpriteParser<BannerSprite>
     {
         result = default;
 
-        List<string> parts = SpriteParseUtility.SplitFileName(fileName);
+        List<string> parts = SpriteParseUtility.SplitByCapital(fileName);
 
         if (parts.Count != 2)
             return false;
