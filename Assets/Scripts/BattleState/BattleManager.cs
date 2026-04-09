@@ -18,7 +18,7 @@ public class BattleManager : Singleton<BattleManager>
     void Start()
     {
         // 임시로 카드 데이터를 생성하여 플레이어 덱에 추가, 실제로는 플레이어 데이터에서 가져와야 함
-        CardInstance cardInstance = new CardInstance(card, false, CardEnchantment.None);
+        CardModel cardInstance = new CardModel(card, false, CardEnchantment.None);
         playerDeck.Add(cardInstance);
         playerDeck.Add(cardInstance);
         playerDeck.Add(cardInstance);

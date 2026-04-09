@@ -50,7 +50,7 @@ public class BattleDeck
         }
     }
 
-    public void MoveOneCard(Deck from, Deck to, CardInstance card)
+    public void MoveOneCard(Deck from, Deck to, CardModel card)
     {
         if (from.Remove(card))
         {
@@ -70,7 +70,7 @@ public class BattleDeck
         ExhaustPile.Clear();
     }
 
-    public CardInstance DrawOne()
+    public CardModel DrawOne()
     {
         if (DrawPile.Count == 0)
         {
@@ -80,7 +80,7 @@ public class BattleDeck
         if (DrawPile.Count == 0)
             return null;
 
-        CardInstance card = DrawPile.RemoveAt(DrawPile.Count - 1);
+        CardModel card = DrawPile.RemoveAt(DrawPile.Count - 1);
         HandPile.Add(card);
         return card;
     }

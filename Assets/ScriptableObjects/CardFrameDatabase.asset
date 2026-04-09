@@ -24,6 +24,9 @@ MonoBehaviour:
     Sprite: {fileID: 21300000, guid: 8bf005fc5bbc9214ea5869391716434b, type: 3}
   frameSprites:
   - Type: 0
+    Rarity: 0
+    Sprite: {fileID: 21300000, guid: 9cf54423b868ba444aed57fedc6c6410, type: 3}
+  - Type: 0
     Rarity: 1
     Sprite: {fileID: 21300000, guid: a92972be60f3c1b42bc39dede49b90d6, type: 3}
   - Type: 0
@@ -32,6 +35,9 @@ MonoBehaviour:
   - Type: 0
     Rarity: 2
     Sprite: {fileID: 21300000, guid: 22a044d86f2925142bbfab66ca0f41e9, type: 3}
+  - Type: 2
+    Rarity: 0
+    Sprite: {fileID: 21300000, guid: 72ae6d719c5907a4faf7e06258a91635, type: 3}
   - Type: 2
     Rarity: 1
     Sprite: {fileID: 21300000, guid: c94a72aa702355c478ed53e027f2bfa8, type: 3}
@@ -42,6 +48,9 @@ MonoBehaviour:
     Rarity: 2
     Sprite: {fileID: 21300000, guid: 3cb54f8ac1f140543b381b2a999c319f, type: 3}
   - Type: 1
+    Rarity: 0
+    Sprite: {fileID: 21300000, guid: ddd3892473ac4704499d3b4628558b45, type: 3}
+  - Type: 1
     Rarity: 1
     Sprite: {fileID: 21300000, guid: 145f39172b93d484481a07e4d3847f17, type: 3}
   - Type: 1
@@ -51,6 +60,8 @@ MonoBehaviour:
     Rarity: 2
     Sprite: {fileID: 21300000, guid: 22d1db7c7034a5e43908d445c5a59f4f, type: 3}
   bannerSprites:
+  - Rarity: 0
+    Sprite: {fileID: 21300000, guid: 63e2f271bcf98dd4bb69e54b21329b81, type: 3}
   - Rarity: 1
     Sprite: {fileID: 21300000, guid: 4f4b009469f49b745a4fa03e9cdecc50, type: 3}
   - Rarity: 3
@@ -58,6 +69,8 @@ MonoBehaviour:
   - Rarity: 2
     Sprite: {fileID: 21300000, guid: d944faa723f1e9546be1196e8f28fc48, type: 3}
   typeIconSprites:
+  - Rarity: 0
+    Sprite: {fileID: 21300000, guid: cab77379bcfc81f449b8c7dca6b034f5, type: 3}
   - Rarity: 1
     Sprite: {fileID: 21300000, guid: e69463842293ed44e8db9da9903df44e, type: 3}
   - Rarity: 3

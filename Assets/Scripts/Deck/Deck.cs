@@ -5,17 +5,17 @@ using UnityEngine;
 
 public class Deck
 {
-    protected readonly List<CardInstance> cards = new();
+    protected readonly List<CardModel> cards = new();
 
-    public IReadOnlyList<CardInstance> Cards => cards;
+    public IReadOnlyList<CardModel> Cards => cards;
     public int Count => cards.Count;
 
-    public virtual void Add(CardInstance card) => cards.Add(card);
-    public virtual bool Remove(CardInstance card) => cards.Remove(card);
+    public virtual void Add(CardModel card) => cards.Add(card);
+    public virtual bool Remove(CardModel card) => cards.Remove(card);
     public virtual void Clear() => cards.Clear();
-    public virtual CardInstance RemoveAt(int index)
+    public virtual CardModel RemoveAt(int index)
     {
-        CardInstance card = cards[index];
+        CardModel card = cards[index];
         cards.RemoveAt(index);
         return card;
     }

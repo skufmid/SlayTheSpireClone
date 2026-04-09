@@ -46,7 +46,7 @@ public enum CardColor
 
 public enum CardRarity
 {
-    Starter, Common, Uncommon, Rare
+    Basic, Common, Uncommon, Rare
 }
 
 public enum CardType
